@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FileManager - Panel</title>
+  <!-- Mantén el enlace a tu CSS tal cual -->
+  <link rel="stylesheet" href="css/stylesHome.css" />
+</head>
+<body>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="app-container">
+    
+    <!-- SIDEBAR IZQUIERDO -->
+    <aside class="sidebar">
+      <!-- Logo y/o ícono superior -->
+      <div class="sidebar-header">
+        <img src="assets/logo.png" alt="Logo de la aplicación" class="logo" />
+        <h1 class="app-name">FileManager</h1>
+      </div>
+
+      <!-- Menú de navegación -->
+      <nav class="menu">
+        <ul>
+          <li><a href="#"><span class="icon">📁</span>Resumen de archivos</a></li>
+          <li><a href="#"><span class="icon">📑</span>Seguimiento de documentos</a></li>
+          <li><a href="#"><span class="icon">👥</span>Colaboradores</a></li>
+          <li><a href="#"><span class="icon">⏰</span>Tareas programadas</a></li>
+          <li><a href="#"><span class="icon">📊</span>Analítica</a></li>
+        </ul>
+      </nav>
+
+      <!-- Sección de Ajustes/Configuración al final -->
+      <div class="sidebar-footer">
+        <a href="#"><span class="icon">⚙️</span>Configuración</a>
+      </div>
+    </aside>
+    
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="main-content">
+      
+      <!-- BARRA SUPERIOR -->
+      <header class="top-bar">
+        <!-- Buscador a la IZQUIERDA -->
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar archivos..." />
+        </div>
+        
+        <!-- Sección derecha (usuario/notificaciones) -->
+        <div class="user-info">
+          <span class="user-name">Nuevo usuario</span>
+          <img src="assets/user-avatar.png" alt="Avatar de usuario" class="avatar" />
+        </div>
+      </header>
+
+      <!-- TARJETAS SUPERIORES (EJEMPLOS) -->
+      <section class="cards-row">
+        <div class="card small-card">
+          <h3>Próximas funciones</h3>
+          <p>¡Descubre lo que viene a continuación!</p>
+        </div>
+        <div class="card small-card">
+          <h3>Próximos proyectos</h3>
+          <p>Mantente al día con nuevos proyectos.</p>
+        </div>
+        <div class="card small-card">
+          <h3>Archivo</h3>
+          <p>Administra tus documentos en un solo lugar.</p>
+        </div>
+        <div class="card small-card">
+          <h3>Consejos para gestionar archivos</h3>
+          <p>Aprende las mejores prácticas para organizar archivos.</p>
+        </div>
+        <div class="card small-card">
+          <h3>Centro de ayuda</h3>
+          <p>Encuentra respuestas o contacta al soporte.</p>
+        </div>
+      </section>
+
+      <!-- SECCIÓN PRINCIPAL (TAREAS Y EVENTOS) -->
+      <section class="main-dashboard">
+        
+        <!-- Tareas en curso -->
+        <div class="tasks card">
+          <h3>Tareas en curso</h3>
+          <ul>
+            <li>
+              <span class="task-title">Weico</span>
+              <span class="task-status">Urgente</span>
+            </li>
+            <li>
+              <span class="task-title">Organiza tus archivos</span>
+              <span class="task-status">Normal</span>
+            </li>
+            <li>
+              <span class="task-title">Mantente en el plan</span>
+              <span class="task-status">Baja</span>
+            </li>
+          </ul>
+          <button class="view-files-btn">Ver todos los archivos</button>
+        </div>
+
+        <!-- Vista mensual (Calendario/Resumen) -->
+        <div class="month-overview card">
+          <h3>Resumen del mes actual</h3>
+          <p>Lun | Mar | Mié | Jue | Vie | Sáb | Dom</p>
+        </div>
+
+        <!-- Próximos eventos (ejemplo) -->
+        <div class="upcoming-events card">
+          <h3>Próximos eventos de archivos</h3>
+          <ul>
+            <li>
+              <span>Taller de servicio de archivos</span>
+              <button class="view-btn">Ver</button>
+              <span class="event-status">Programado</span>
+            </li>
+            <li>
+              <span>Diseño de interacción de archivos</span>
+              <button class="view-btn">Ver</button>
+              <span class="event-status">En revisión</span>
+            </li>
+            <li>
+              <span>Sesión con experto en diseño</span>
+              <button class="view-btn">Ver</button>
+              <span class="event-status">Programado</span>
+            </li>
+            <li>
+              <span>Prueba de interfaz</span>
+              <button class="view-btn">Ver</button>
+              <span class="event-status">Hecho</span>
+            </li>
+          </ul>
+          <button class="full-schedule-btn">Ver horario completo</button>
+        </div>
+
+        <!-- Horas de gestión de archivos (ejemplo de gráfica) -->
+        <div class="file-management-hours card">
+          <h3>Horas de gestión de archivos</h3>
+          <p>Aquí puedes mostrar una gráfica o estadísticas sobre el tiempo dedicado a gestionar archivos.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
